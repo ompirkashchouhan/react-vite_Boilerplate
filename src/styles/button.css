@@ -1,0 +1,25 @@
+/* Basic style */
+.btn {
+  position: relative;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  background: linear-gradient(45deg, #6a5acd, #ff1493);
+  transition: all 0.3s ease;
+}
+
+.btn.shimmer {
+  background: linear-gradient(90deg, #6a5acd, #ff1493, #ff8c00);
+  background-size: 200%;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
